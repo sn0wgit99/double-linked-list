@@ -13,13 +13,13 @@ public class DoublyLinkedList<T> {
     }
 
     public void addFirst(T data) {
-        List<T> newNode = new List<>(data);
+        List<T> newList = new List<>(data);
         if (head == null) {
-            head = tail = newNode;
+            head = tail = newList;
         } else {
-            newNode.next = head;
-            head.prev = newNode;
-            head = newNode;
+            newList.next = head;
+            head.prev = newList;
+            head = newList;
         }
     }
 
